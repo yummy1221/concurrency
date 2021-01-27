@@ -18,10 +18,13 @@ void hello()
 
 int main()
 {
+    /*
     std::thread t(hello);
     MyClass c;
     std::thread ct(c);
     std::thread ct2(MyClass());
     t.join();
     ct.join();
+    */
+    std::cout << std::thread::hardware_concurrency() << "\n";
 }
